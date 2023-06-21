@@ -3,7 +3,7 @@
 	provider-name="phil65, Ichabod Fletchman, Ivar Brandt">
 	<requires>
 		<import addon="xbmc.gui" version="5.16.0" />
-		<import addon="script.fentastic.helper" />
+		<import addon="script.fentastic.helper.miki" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
