@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="SearchList">
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(FENMovieResults)">
+            <param name="content_path" value="plugin://plugin.video.fen/?mode=build_movie_list&amp;action=tmdb_movies_search&amp;query=$INFO[Skin.String(SearchInputEncoded)]"/>
+            <param name="widget_header" value="FEN Movies"/>
+            <!-- <param name="widget_header" value="$LOCALIZE[342]"/> -->
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="27011"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(FENTVShowResults)">
+            <param name="content_path" value="plugin://plugin.video.fen/?mode=build_tvshow_list&amp;action=tmdb_tv_search&amp;query=$INFO[Skin.String(SearchInputEncoded)]"/>
+            <param name="widget_header" value="FEN TV Shows"/>
+            <!-- <param name="widget_header" value="$LOCALIZE[20343]"/> -->
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="27012"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(CollectionsResults)">
+            <param name="content_path" value="plugin://plugin.video.fen/?mode=build_movie_list&amp;action=tmdb_movies_search_sets&amp;query=$INFO[Skin.String(SearchInputEncoded)]"/>
+            <param name="widget_header" value="Collections"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="27013"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(PeopleResults)">
+            <param name="content_path" value="plugin://plugin.video.fen/?mode=person_direct.search&amp;query=$INFO[Skin.String(SearchInputEncoded)]"/>
+            <param name="widget_header" value="Actors/Actresses"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="27014"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(MovieKeywordResults)">
+            <param name="content_path" value="plugin://plugin.video.fen/?mode=build_movie_list&amp;action=imdb_keywords_list_contents&amp;list_id=$INFO[Skin.String(SearchInputEncoded)]"/>
+            <param name="widget_header" value="IMDb Keywords (Movies)"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="27015"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(TVShowKeywordResults)">
+            <param name="content_path" value="plugin://plugin.video.fen/?mode=build_tvshow_list&amp;action=imdb_keywords_list_contents&amp;list_id=$INFO[Skin.String(SearchInputEncoded)]"/>
+            <param name="widget_header" value="IMDb Keywords (TV Shows)"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="27016"/>
+        </include>
+        <include content="WidgetListItems" condition="Skin.HasSetting(TraktResults)">
+            <param name="content_path" value="plugin://plugin.video.fen/?mode=trakt.list.search_trakt_lists&amp;query=$INFO[Skin.String(SearchInputTraktEncoded)]"/>
+            <param name="widget_header" value="TRAKT Lists"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="27017"/>
+            <param name="item_limit" value="8" />
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(SerenMovieResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),plugin://plugin.video.seren/?action=moviesSearchResults&amp;actionArgs=]"/>
+            <param name="widget_header" value="Seren Movies"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20018"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(SerenTVShowResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),plugin://plugin.video.seren/?action=showsSearchResults&amp;actionArgs=]"/>
+            <param name="widget_header" value="Seren TV Shows"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20019"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(TMDBMovieResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),plugin://plugin.video.themoviedb.helper?info=search&amp;history=true&amp;type=movie&amp;query=]"/>
+            <param name="widget_header" value="TMDB Movies"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20020"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(TMDBTVShowResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),plugin://plugin.video.themoviedb.helper?info=search&amp;history=true&amp;type=tv&amp;query=]"/>
+            <param name="widget_header" value="TMDB TV Shows"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20021"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(VenomMovieResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),plugin://plugin.video.venom/','12','?action=movieSearchterm&amp;name=]"/>
+            <param name="widget_header" value="Venom Movies"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20022"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(VenomTVShowResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),plugin://plugin.video.venom/?action=tvSearchterm&amp;name=]"/>
+            <param name="widget_header" value="Venom TV Shows"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20023"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(KaitoResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),plugin://plugin.video.kaito/?action=search_results&amp;action_args=]"/>
+            <param name="widget_header" value="Kaito"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20024"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(KodiODM)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),plugin://plugin.video.kod/?ewogICAgImNoYW5uZWwiOiAic2VhcmNoIiwKICAgICJhY3Rpb24iOiAibmV3X3NlYXJjaCIsCiAgICAibW9kZSI6ICJhbGwiCn0=&amp;search_text=]"/>
+            <param name="widget_header" value="Kodi On Demand"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20025"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(LibMovieResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22title%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D]"/>
+            <param name="widget_header" value="Library Movies"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20026"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(LibTVShowResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),videodb://tvshows/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22title%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22tvshows%22%7D]"/>
+            <param name="widget_header" value="Library TV Shows"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20027"/>
+        </include>
+        <include content="WidgetEpisodes" condition="Skin.HasSetting(LibEpisodeResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),videodb://tvshows/titles/-1/-1/-1/-1/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22title%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22episodes%22%7D]"/>
+            <param name="widget_header" value="Library Episodes"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20028"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(LibGenreResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22genre%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D]"/>
+            <param name="widget_header" value="Library Genres"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20029"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(LibYearResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22year%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D]"/>
+            <param name="widget_header" value="Library Year"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20030"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(LibStudioResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22studio%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D]"/>
+            <param name="widget_header" value="Library Studio"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20031"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(LibCountryResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22country%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D]"/>
+            <param name="widget_header" value="Library Country"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20032"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(LibActorResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22actor%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D]"/>
+            <param name="widget_header" value="Library Actor"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20033"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(DirectorResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22director%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D]"/>
+            <param name="widget_header" value="Director"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20034"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(AlbumsResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),musicdb://albums/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22album%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22albums%22%7D]"/>
+            <param name="widget_header" value="Albums"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20035"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(ArtistsResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),musicdb://artists/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22artist%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22artists%22%7D]"/>
+            <param name="widget_header" value="Artists"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20036"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(MusicVideoResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),videodb://musicvideos/titles/?xsp=%7b%22order%22%3a%7b%22direction%22%3a%22ascending%22%2c%22ignorefolders%22%3a0%2c%22method%22%3a%22sorttitle%22%7d%2c%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22title%22%2c%22operator%22%3a%22contains%22%2c%22value%22%3a%5b%22,%22%5d%7d%5d%7d%2c%22type%22%3a%22musicvideos%22%7d]"/>
+            <param name="widget_header" value="Music Videos"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20037"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(MusicVideoArtistResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),videodb://musicvideos/titles/?xsp=%7b%22order%22%3a%7b%22direction%22%3a%22ascending%22%2c%22ignorefolders%22%3a0%2c%22method%22%3a%22sorttitle%22%7d%2c%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22artist%22%2c%22operator%22%3a%22contains%22%2c%22value%22%3a%5b%22,%22%5d%7d%5d%7d%2c%22type%22%3a%22musicvideos%22%7d]"/>
+            <param name="widget_header" value="Music Video Artists"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20038"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(YouTubeResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),plugin://plugin.video.youtube/kodion/search/query/?q=,&amp;search_type=notvalid]"/>
+            <param name="widget_header" value="YouTube"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20039"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(NetflixResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),plugin://plugin.video.netflix/directory/search/search/,/]"/>
+            <param name="widget_header" value="Netflix"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20040"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(AddonResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),addons://search/]"/>
+            <param name="widget_header" value="Addons"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20041"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(SpotifyArtistResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),plugin://plugin.audio.spotify/?action=search_artists&amp;artistid=]"/>
+            <param name="widget_header" value="Spotify Artists"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20042"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(SpotifyAlbums)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),plugin://plugin.audio.spotify/?action=search_albums&amp;albumid=]"/>
+            <param name="widget_header" value="Spotify Albums"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20043"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(SpotifySongResults)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),plugin://plugin.audio.spotify/?action=search_albums&amp;songid=]"/>
+            <param name="widget_header" value="Spotify Songs"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20044"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(SpotifyPlaylistsResults1)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),plugin://plugin.audio.spotify/?action=search_songs&amp;playlistid=]"/>
+            <param name="widget_header" value="Spotify Playlists"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20045"/>
+        </include>
+        <include content="WidgetListPosterCustom" condition="Skin.HasSetting(SpotifyPlaylistsResults2)">
+            <param name="content_path" value="$INFO[Skin.String(SearchInputEncoded),plugin://plugin.audio.spotify/?action=search_playlists&amp;playlistid=]"/>
+            <param name="widget_header" value="Spotify Playlists"/>
+            <param name="widget_target" value="videos"/>
+            <param name="list_id" value="20046"/>
+        </include>        
+    </include>
+</includes>
