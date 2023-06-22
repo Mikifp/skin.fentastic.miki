@@ -4,16 +4,16 @@
         <param name="left">35</param>
         <definition>
             <control type="progress">
-            <left>$PARAM[left]</left>
-            <top>$PARAM[top]</top>
-            <width>$PARAM[width]</width>
-            <height>1</height>
-            <texturebg></texturebg>
-            <midtexture colordiffuse="button_focus" border="3">progress/texturebg_alt_white.png</midtexture>
-            <info>Container($PARAM[id]).ListItem.Property(WatchedProgress)</info>
-            <visible>[String.IsEqual(ListItem.DBtype,movie) + !String.IsEmpty(Container($PARAM[id]).ListItem.Property(WatchedProgress)) + !Integer.IsEqual(Container($PARAM[id]).ListItem.Property(WatchedProgress),0)] | [Integer.IsGreater(Container($PARAM[id]).ListItem.Property(UnwatchedEpisodes),0) + !String.IsEmpty(Container($PARAM[id]).ListItem.Property(WatchedProgress)) + !Integer.IsEqual(Container($PARAM[id]).ListItem.Property(WatchedProgress),0)] | [String.IsEqual(ListItem.DBtype,episode) + !String.IsEmpty(Container($PARAM[id]).ListItem.Property(WatchedProgress)) + !Integer.IsEqual(Container($PARAM[id]).ListItem.Property(WatchedProgress),0)]</visible>
-            <include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
-        </control>
+                <left>$PARAM[left]</left>
+                <top>$PARAM[top]</top>
+                <width>$PARAM[width]</width>
+                <height>1</height>
+                <texturebg></texturebg>
+                <midtexture colordiffuse="button_focus" border="3">progress/texturebg_alt_white.png</midtexture>
+                <info>Container($PARAM[id]).ListItem.Property(WatchedProgress)</info>
+                <visible>[String.IsEqual(ListItem.DBtype,movie) + !String.IsEmpty(Container($PARAM[id]).ListItem.Property(WatchedProgress)) + !Integer.IsEqual(Container($PARAM[id]).ListItem.Property(WatchedProgress),0)] | [Integer.IsGreater(Container($PARAM[id]).ListItem.Property(UnwatchedEpisodes),0) + !String.IsEmpty(Container($PARAM[id]).ListItem.Property(WatchedProgress)) + !Integer.IsEqual(Container($PARAM[id]).ListItem.Property(WatchedProgress),0)] | [String.IsEqual(ListItem.DBtype,episode) + !String.IsEmpty(Container($PARAM[id]).ListItem.Property(WatchedProgress)) + !Integer.IsEqual(Container($PARAM[id]).ListItem.Property(WatchedProgress),0)]</visible>
+                <include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+            </control>
         </definition>
     </include>
 
@@ -143,7 +143,7 @@
             </include>
 
             <control type="group">
-                <left>134</left>
+                <left>238</left> <!-- AW width -52 -->
                 <top>-8</top>
                 <include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
             </control>
@@ -292,7 +292,7 @@
             </control>
 
             <control type="group">
-                <left>340</left>
+                <left>668</left> <!-- AW width -52 -->
                 <top>-8</top>
                 <include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
             </control>
@@ -446,7 +446,7 @@
             </control>
 
             <control type="group">
-                <left>340</left>
+                <left>293</left> <!-- AW width -52 -->
                 <top>-8</top>
                 <include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
             </control>
@@ -584,7 +584,7 @@
             </control>
 
             <control type="group">
-                <left>138</left>
+                <left>264</left> <!-- AW width -52 -->
                 <top>-8</top>
                 <include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
             </control>
@@ -720,8 +720,8 @@
                 <param name="width" value="307"/>
             </include>
             <control type="group">
-                <left>138</left>
-                <top>8</top>
+                <left>249</left>
+                <top>12</top>
                 <include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
             </control>
         </definition>

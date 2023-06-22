@@ -34,6 +34,7 @@
 	<include file="Variables.xml" />
 	<include file="Includes_Widgets.xml" />
 	<include file="Includes_Layouts.xml" />
+	<include file="Includes_Search_List.xml" />
 	<constant name="DepthDialog">0.50</constant>
 	<constant name="DepthDialog+">0.52</constant>
 	<constant name="DepthDialog-">0.48</constant>

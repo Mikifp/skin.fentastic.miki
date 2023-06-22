@@ -230,17 +230,17 @@
 				</control>
 
 				<control type="radiobutton" id="6381">
-					<label>   - $LOCALIZE[342]</label>
+					<label>   - FEN $LOCALIZE[342]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(MovieResults)</onclick>
-					<selected>Skin.HasSetting(MovieResults)</selected>
+					<onclick>Skin.ToggleSetting(FENMovieResults)</onclick>
+					<selected>Skin.HasSetting(FENMovieResults)</selected>
 					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
 				</control>
 				<control type="radiobutton" id="6382">
-					<label>   - $LOCALIZE[20343]</label>
+					<label>   - FEN $LOCALIZE[20343]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(TVShowResults)</onclick>
-					<selected>Skin.HasSetting(TVShowResults)</selected>
+					<onclick>Skin.ToggleSetting(FENTVShowResults)</onclick>
+					<selected>Skin.HasSetting(FENTVShowResults)</selected>
 					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
 				</control>
 				<control type="radiobutton" id="6383">
@@ -276,6 +276,209 @@
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(TraktResults)</onclick>
 					<selected>Skin.HasSetting(TraktResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6388">
+					<label>   - Seren Movies</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(SerenMovieResults)</onclick>
+					<selected>Skin.HasSetting(SerenMovieResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6389">
+					<label>   - Seren TV Shows</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(SerenTVShowResults)</onclick>
+					<selected>Skin.HasSetting(SerenTVShowResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6390">
+					<label>   - TMDB Movies</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(TMDBMovieResults)</onclick>
+					<selected>Skin.HasSetting(TMDBMovieResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6391">
+					<label>   - TMDB TV Shows</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(TMDBTVShowResults)</onclick>
+					<selected>Skin.HasSetting(TMDBTVShowResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6392">
+					<label>   - Venom Movies</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(VenomMovieResults)</onclick>
+					<selected>Skin.HasSetting(VenomMovieResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6393">
+					<label>   - Venom TV Shows</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(VenomTVShowResults)</onclick>
+					<selected>Skin.HasSetting(VenomTVShowResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6394">
+					<label>   - Kaito</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(KaitoResults)</onclick>
+					<selected>Skin.HasSetting(KaitoResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6395">
+					<label>   - Kodi On Demand</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(KodiODM)</onclick>
+					<selected>Skin.HasSetting(KodiODM)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6396">
+					<label>   - Local Libary Movies</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(LibMovieResults)</onclick>
+					<selected>Skin.HasSetting(LibMovieResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6397">
+					<label>   - Local Libary TV Shows</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(LibTVShowResults)</onclick>
+					<selected>Skin.HasSetting(LibTVShowResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6398">
+					<label>   - Local Libary Episodes</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(LibEpisodeResults)</onclick>
+					<selected>Skin.HasSetting(LibEpisodeResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6499">
+					<label>   - Local Libary Genre</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(LibGenreResults)</onclick>
+					<selected>Skin.HasSetting(LibGenreResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6400">
+					<label>   - Local Libary Year</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(LibYearResults)</onclick>
+					<selected>Skin.HasSetting(LibYearResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6401">
+					<label>   - Local Libary Studios</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(LibStudioResults)</onclick>
+					<selected>Skin.HasSetting(LibStudioResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6402">
+					<label>   - Local Libary Country</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(LibCountryResults)</onclick>
+					<selected>Skin.HasSetting(LibCountryResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6403">
+					<label>   - Local Libary Actors</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(LibActorResults)</onclick>
+					<selected>Skin.HasSetting(LibActorResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6404">
+					<label>   - Local Libary Directors</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(DirectorResults)</onclick>
+					<selected>Skin.HasSetting(DirectorResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6405">
+					<label>   - Local Libary Albums</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(AlbumsResults)</onclick>
+					<selected>Skin.HasSetting(AlbumsResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6406">
+					<label>   - Local Libary Artists</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(ArtistsResults)</onclick>
+					<selected>Skin.HasSetting(ArtistsResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6407">
+					<label>   - Music Videos</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(MusicVideoResults)</onclick>
+					<selected>Skin.HasSetting(MusicVideoResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6408">
+					<label>   - Music Video Artists</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(MusicVideoArtistResults)</onclick>
+					<selected>Skin.HasSetting(MusicVideoArtistResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6409">
+					<label>   - YouTube</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(YouTubeResults)</onclick>
+					<selected>Skin.HasSetting(YouTubeResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6410">
+					<label>   - Netflix</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(NetflixResults)</onclick>
+					<selected>Skin.HasSetting(NetflixResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6411">
+					<label>   - Addons</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(AddonResults)</onclick>
+					<selected>Skin.HasSetting(AddonResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6412">
+					<label>   - Spotify Artists</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(SpotifyArtistResults)</onclick>
+					<selected>Skin.HasSetting(SpotifyArtistResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6413">
+					<label>   - Spotify Albums</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(SpotifyAlbums)</onclick>
+					<selected>Skin.HasSetting(SpotifyAlbums)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6414">
+					<label>   - Spotify Songs</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(SpotifySongResults)</onclick>
+					<selected>Skin.HasSetting(SpotifySongResults)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6415">
+					<label>   - Spotify Playlist 1</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(SpotifyPlaylistsResults1)</onclick>
+					<selected>Skin.HasSetting(SpotifyPlaylistsResults1)</selected>
+					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
+				</control>
+				<control type="radiobutton" id="6416">
+					<label>   - Spotify Playlist 2</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(SpotifyPlaylistsResults2)</onclick>
+					<selected>Skin.HasSetting(SpotifyPlaylistsResults2)</selected>
 					<visible>!Skin.HasSetting(NoSearchResultsWindow)</visible>
 				</control>
 			</control>
