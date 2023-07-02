@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="skin.fentastic.miki" version="1.0.13" name="FENtastic Miki"
-	provider-name="phil65, Ichabod Fletchman, Ivar Brandt">
+	provider-name="phil65, Ichabod Fletchman, Ivar Brandt, Mikifp">
 	<requires>
 		<import addon="xbmc.gui" version="5.16.0" />
 		<import addon="script.fentastic.helper.miki" />
@@ -32,9 +32,9 @@
 			<screenshot>resources/screenshot-07.jpg</screenshot>
 		</assets>
 		
-		<summary lang="en_GB">FENtastic skin by Ivar Brandt (Estuary MOD)</summary>
-		<summary lang="en_NZ">FENtastic skin by Ivar Brandt (Estuary MOD)</summary>
-		<summary lang="en_US">FENtastic skin by Ivar Brandt (Estuary MOD)</summary>
+		<summary lang="en_GB">FENtastic skin by Ivar Brandt (Estuary MOD) modified by Mikifp</summary>
+		<summary lang="en_NZ">FENtastic skin by Ivar Brandt (Estuary MOD) modified by Mikifp</summary>
+		<summary lang="en_US">FENtastic skin by Ivar Brandt (Estuary MOD) modified by Mikifp</summary>
 		
 		<description lang="af_ZA">Estuary is die bestek oortreksel vir Kodi 17.0 en op. Dit poog om
 			maklik te wees vir eerste keer Kodi gebruikers om te verstaan en te gebruik.</description>
