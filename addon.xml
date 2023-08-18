@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.fentastic.miki" version="1.0.14" name="FENtastic Miki"
+<addon id="skin.fentastic.miki" version="1.0.15" name="FENtastic Miki"
 	provider-name="phil65, Ichabod Fletchman, Ivar Brandt, Mikifp">
 	<requires>
 		<import addon="xbmc.gui" version="5.16.0" />
