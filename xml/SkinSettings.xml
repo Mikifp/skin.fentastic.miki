@@ -641,9 +641,9 @@
 				<visible>Container(9000).HasFocus(6)</visible>
 				<control type="button" id="6230">
 					<include>DefaultSettingButton</include>
-					<label>[B]CHANGELOG: $INFO[System.AddonTitle(skin.fentastic)][/B]</label>
+					<label>[B]CHANGELOG: $INFO[System.AddonTitle(skin.fentastic.miki)][/B]</label>
 					<onclick>SetProperty(Changelog,True)</onclick>
-					<onclick>SetProperty(TextViewerHeader,[B]CHANGELOG: $INFO[System.AddonTitle(skin.fentastic)] v$INFO[System.AddonVersion(skin.fentastic)][/B],Home)</onclick>
+					<onclick>SetProperty(TextViewerHeader,[B]CHANGELOG: $INFO[System.AddonTitle(skin.fentastic.miki)] v$INFO[System.AddonVersion(skin.fentastic.miki)][/B],Home)</onclick>
 					<onclick>ActivateWindow(1119)</onclick>
 				</control>
 				<control type="button" id="6231">

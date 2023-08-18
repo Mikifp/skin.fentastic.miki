@@ -9,11 +9,11 @@
 	<include file="Includes_DialogSelect.xml" />
 	<include file="Includes_MusicInfo.xml" />
 	<include file="Includes_PVR.xml" />
-	<include file="script-fentastic-main_menu_movies.xml" />
-	<include file="script-fentastic-main_menu_tvshows.xml" />
-	<include file="script-fentastic-widget_movies.xml" />
-	<include file="script-fentastic-widget_tvshows.xml" />
-	<include file="script-fentastic-search_history.xml" />
+	<include file="script-fentastic.miki-main_menu_movies.xml" />
+	<include file="script-fentastic.miki-main_menu_tvshows.xml" />
+	<include file="script-fentastic.miki-widget_movies.xml" />
+	<include file="script-fentastic.miki-widget_tvshows.xml" />
+	<include file="script-fentastic.miki-search_history.xml" />
 	<include file="View_50_List.xml" />
 	<include file="View_51_Poster.xml" />
 	<include file="View_52_IconWall.xml" />

@@ -1,32 +1,32 @@
-# FENtastic Skin for Kodi Nexus
+# fentastic.miki Skin for Kodi Nexus
 
-FENtastic is a modded version of the default Estuary skin, specifically designed for FEN users. It includes several new features and adjustments to pre-existing views, including new viewtypes, customizable widgets, and a new default colors theme.
+fentastic.miki is a modded version of the default Estuary skin, specifically designed for FEN users. It includes several new features and adjustments to pre-existing views, including new viewtypes, customizable widgets, and a new default colors theme.
 
-## FENtastic vs Default Estuary Skin
+## fentastic.miki vs Default Estuary Skin
 
-Here are some of the key differences between FENtastic and the default Estuary skin.
+Here are some of the key differences between fentastic.miki and the default Estuary skin.
 
-* **New viewtypes**: FENtastic introduces "WideInfoWall" and "WideWall" viewtypes.
+* **New viewtypes**: fentastic.miki introduces "WideInfoWall" and "WideWall" viewtypes.
 
   ![Viewtypes](resources/images/viewtypes.jpg)
 
-* **Customizable Widgets**: FENtastic allows you to customize widgets and category widgets for movies, tvshows, and episodes.
+* **Customizable Widgets**: fentastic.miki allows you to customize widgets and category widgets for movies, tvshows, and episodes.
 
   ![Customizable Widgets](resources/images/customizable_widgets.jpg)
 
-* **Custom Stacked Widgets**: FENtastic introduces stacked widgets for movies and tvshows.
+* **Custom Stacked Widgets**: fentastic.miki introduces stacked widgets for movies and tvshows.
 
   ![Stacked Widgets](resources/images/stacked_widgets.jpg)
 
-* **Custom Search Window**: FENtastic introduces a search window to simultaneously search multiple categories.
+* **Custom Search Window**: fentastic.miki introduces a search window to simultaneously search multiple categories.
 
   ![Search Window](resources/images/search_window.jpg)
 
-* **InfoPanel**: FENtastic introduces a new InfoPanel for widgets.
+* **InfoPanel**: fentastic.miki introduces a new InfoPanel for widgets.
 
   ![InfoPanel](resources/images/infopanel.jpg)
 
-* **Color Theme**: FENtastic comes with a new default color theme, and a new color theme 'purple'.
+* **Color Theme**: fentastic.miki comes with a new default color theme, and a new color theme 'purple'.
 
   ![Color Theme](resources/images/color_theme.jpg)
 
@@ -58,7 +58,7 @@ After adding the source go back to the Settings page » click Addons » Install 
 
 ![Install from zip](resources/images/install_from_zip.jpg)
 
-Now click Install from repository » Find and click ivarbrandt's Repository » Look and feel » Skin » FENtastic » click to install it.
+Now click Install from repository » Find and click ivarbrandt's Repository » Look and feel » Skin » fentastic.miki » click to install it.
 
 ![Addon Info](resources/images/addon_info.jpg)
 
@@ -112,7 +112,7 @@ Stacked widgets contain a category widget and a normal widget beneath. The categ
 
 ## Guidelines for Reporting Issues
 
-If you encounter any issues while using FENtastic, please follow these guidelines before opening an Issue:
+If you encounter any issues while using fentastic.miki, please follow these guidelines before opening an Issue:
 
 - Read the **CHANGELOG**. As new updates get released features are added, changed, modified or removed. *Before opening an Issue* related to this make sure you read the changelog (located at the bottom of Skin settings in Extra info) as it will contain information for all the changes made to each update. It is also a good way to stay current with what is new with the skin.
 - **Pre-made builds** of any kind are *not supported*. If you installed someone else's build, you need to go to them to troubleshoot issues. These builds often contain a plethora of addons so any number of things could go wrong. Keep in mind this skin was designed exclusively for use with **FEN**.

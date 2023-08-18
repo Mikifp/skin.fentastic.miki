@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="Changelog">
-    <label>[B][COLOR button_focus]Version $INFO[System.AddonVersion(skin.fentastic)][/COLOR][/B]
+    <label>[B][COLOR button_focus]Version $INFO[System.AddonVersion(skin.fentastic.miki)][/COLOR][/B]
 - Fixed empty Search window on new Kodi installs
 - Fixed stacked widget renaming
 - Updated widget list to circular ordering; topmost widget will now cycle to the bottom when moved up and vice versa
@@ -133,9 +133,9 @@ Main changes from default Estuary include:
 
 
   <include name="SetupGuide">
-    <label>[B][COLOR button_focus]Welcome to the FENtastic Setup Guide[/COLOR][/B]
+    <label>[B][COLOR button_focus]Welcome to the fentastic.miki Setup Guide[/COLOR][/B]
 
-FENtastic is a skin specifically designed for FEN users. It can display movie, tvshow, and episode widgets as well as submenu widgets. It can also set paths for main menu items (more on this later). Here in this guide I will show you how these work and how to set them up.
+fentastic.miki is a skin specifically designed for FEN users. It can display movie, tvshow, and episode widgets as well as submenu widgets. It can also set paths for main menu items (more on this later). Here in this guide I will show you how these work and how to set them up.
 
 On first install the home screen should be empty. This means that the Movie and Show sections should be missing from the main menu on the left.
 
@@ -152,7 +152,7 @@ Click a menu item to toggle the display of a section on and off. This will show 
 
 That's it! You're all set to go. Enjoy the skin!
 
-If you would like to see a more detailed version of this Setup Guide, please visit my Github repo at https://github.com/ivarbrandt/skin.fentastic
+If you would like to see a more detailed version of this Setup Guide, please visit my Github repo at https://github.com/ivarbrandt/skin.fentastic.miki
     </label>
   </include>
 
