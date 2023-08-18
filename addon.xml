@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.fentastic.miki" version="1.0.14" name="fentastic.miki Miki"
+<addon id="skin.fentastic.miki" version="1.0.14" name="FENtastic Miki"
 	provider-name="phil65, Ichabod Fletchman, Ivar Brandt, Mikifp">
 	<requires>
 		<import addon="xbmc.gui" version="5.16.0" />
-		<import addon="script.fentastic.miki.helper" />
+		<import addon="script.fentastic.helper.miki" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -33,9 +33,9 @@
 			<screenshot>resources/screenshot-07.jpg</screenshot>
 		</assets>
 		
-		<summary lang="en_GB">fentastic.miki skin by Ivar Brandt (Estuary MOD) modified by Mikifp</summary>
-		<summary lang="en_NZ">fentastic.miki skin by Ivar Brandt (Estuary MOD) modified by Mikifp</summary>
-		<summary lang="en_US">fentastic.miki skin by Ivar Brandt (Estuary MOD) modified by Mikifp</summary>
+		<summary lang="en_GB">FENtastic skin by Ivar Brandt (Estuary MOD) modified by Mikifp</summary>
+		<summary lang="en_NZ">FENtastic skin by Ivar Brandt (Estuary MOD) modified by Mikifp</summary>
+		<summary lang="en_US">FENtastic skin by Ivar Brandt (Estuary MOD) modified by Mikifp</summary>
 		
 		<description lang="af_ZA">Estuary is die bestek oortreksel vir Kodi 17.0 en op. Dit poog om
 			maklik te wees vir eerste keer Kodi gebruikers om te verstaan en te gebruik.</description>
@@ -57,9 +57,9 @@
 		<description lang="el_GR">Το Estuary είναι η προεπιλεγμένη αμφίεση για τις εκδόσεις Kodi 17.0
 			και άνω. Επιχειρεί να είναι προσιτό στους αρχάριους χρήστες του Kodi για να το κατανοήσουν και
 			να το χρησιμοποιήσουν.</description>
-		<description lang="en_GB">fentastic.miki is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
-		<description lang="en_NZ">fentastic.miki is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
-		<description lang="en_US">fentastic.miki is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
+		<description lang="en_GB">FENtastic is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
+		<description lang="en_NZ">FENtastic is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
+		<description lang="en_US">FENtastic is a modified version of the default Estuary skin for Kodi Nexus. It is intended for use only with FEN.[CR][CR]See [B]CHANGELOG[/B] located in Skin settings » Extra info for latest changes.</description>
 		<description lang="es_AR">Estuary es el skin por defecto para Kodi 17.0 y posteriores. Intenta
 			ser fácil de entender y utilizar para los usuarios Kodi primerizos.</description>
 		<description lang="es_ES">Estuary es el skin por defecto para Kodi 17.0 o superior. Su objetivo

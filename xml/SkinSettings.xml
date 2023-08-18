@@ -34,7 +34,7 @@
 				<control type="button" id="624">
 					<label>Remake menus and widgets</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.fentastic.miki.helper,mode=remake_all_cpaths)</onclick>
+					<onclick>RunScript(script.fentastic.helper.miki,mode=remake_all_cpaths)</onclick>
 				</control>
 				<!-- MOVIES -->
 				<control type="radiobutton" id="6240">
@@ -46,13 +46,13 @@
 				<control type="button" id="6241">
 					<label>   - Set main menu path</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.fentastic.miki.helper,mode=manage_main_menu_path&amp;cpath_setting=movie.main_menu)</onclick>
+					<onclick>RunScript(script.fentastic.helper.miki,mode=manage_main_menu_path&amp;cpath_setting=movie.main_menu)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoMoviesButton)</visible>
 				</control>
 				<control type="button" id="6242">
 					<label>   - Set widgets</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.fentastic.miki.helper,mode=manage_widgets&amp;cpath_setting=movie.widget)</onclick>
+					<onclick>RunScript(script.fentastic.helper.miki,mode=manage_widgets&amp;cpath_setting=movie.widget)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoMoviesButton)</visible>
 				</control>
 				<!-- <control type="radiobutton" id="6243">
@@ -72,13 +72,13 @@
 				<control type="button" id="6250">
 					<label>   - Set main menu path</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.fentastic.miki.helper,mode=manage_main_menu_path&amp;cpath_setting=tvshow.main_menu)</onclick>
+					<onclick>RunScript(script.fentastic.helper.miki,mode=manage_main_menu_path&amp;cpath_setting=tvshow.main_menu)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoTVShowsButton)</visible>
 				</control>
 				<control type="button" id="6251">
 					<label>   - Set widgets</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.fentastic.miki.helper,mode=manage_widgets&amp;cpath_setting=tvshow.widget)</onclick>
+					<onclick>RunScript(script.fentastic.helper.miki,mode=manage_widgets&amp;cpath_setting=tvshow.widget)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoTVShowsButton)</visible>
 				</control>
 				<!-- <control type="radiobutton" id="6252">
@@ -641,9 +641,9 @@
 				<visible>Container(9000).HasFocus(6)</visible>
 				<control type="button" id="6230">
 					<include>DefaultSettingButton</include>
-					<label>[B]CHANGELOG: $INFO[System.AddonTitle(skin.fentastic.miki)][/B]</label>
+					<label>[B]CHANGELOG: $INFO[System.AddonTitle(skin.fentastic)][/B]</label>
 					<onclick>SetProperty(Changelog,True)</onclick>
-					<onclick>SetProperty(TextViewerHeader,[B]CHANGELOG: $INFO[System.AddonTitle(skin.fentastic.miki)] v$INFO[System.AddonVersion(skin.fentastic.miki)][/B],Home)</onclick>
+					<onclick>SetProperty(TextViewerHeader,[B]CHANGELOG: $INFO[System.AddonTitle(skin.fentastic)] v$INFO[System.AddonVersion(skin.fentastic)][/B],Home)</onclick>
 					<onclick>ActivateWindow(1119)</onclick>
 				</control>
 				<control type="button" id="6231">
